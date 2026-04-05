@@ -7,11 +7,13 @@ border =  "=" * 40
 
 print(f"{border}\n{intro_message}\n{border}")
 
-playing = input("Gostaria de iniciar?(S/N) ").lower().strip()
+playing = input("Gostaria de iniciar?(s/n) ").lower().strip()
 valid_asnwers = ["sim", "s", "yes", "y", "true", "claro", "com certeza"]
 
 if playing not in valid_asnwers:
     quit()
+
+answer_options = "Sua resposta(a/b/c/d): "
 
 question_01 = (
     "O que é um algoritmo?\n"
@@ -26,7 +28,7 @@ question_01 = (
     "c) É focar no que é importante e ignorar detalhes "
     "desnecessários naquele momento.\n"
 
-    "a, b ou c? "
+    "d) É um tipo de operador lógico."
 )
-user_answer_01 = input(question_01).lower().strip()
-correct_answer_01 = "c"
+correct_answer_01 = "b"
+user_answer_01 = input(f"{question_01}\n{answer_options}").lower().strip()
