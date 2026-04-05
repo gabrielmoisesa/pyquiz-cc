@@ -30,5 +30,5 @@ question_01 = (
 
     "d) É um tipo de operador lógico.\n"
 )
-correct_answer_01 = "b"
+answer_01 = "b"
 user_answer_01 = input(f"{question_01}\n{answer_options}").lower().strip()
