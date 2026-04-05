@@ -16,7 +16,7 @@ if playing not in valid_asnwers:
 answer_options = "Sua resposta(a/b/c/d): "
 
 question_01 = (
-    "O que é um algoritmo?\n"
+    "\n1 - O que é um algoritmo?\n"
 
     "a) É perceber semelhanças entre problemas ou situações.\n"
 
@@ -28,7 +28,7 @@ question_01 = (
     "c) É focar no que é importante e ignorar detalhes "
     "desnecessários naquele momento.\n"
 
-    "d) É um tipo de operador lógico."
+    "d) É um tipo de operador lógico.\n"
 )
 correct_answer_01 = "b"
 user_answer_01 = input(f"{question_01}\n{answer_options}").lower().strip()
