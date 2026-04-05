@@ -1,21 +1,20 @@
-intro_message = (
-    "Boas vindas ao PyQuiz CC!\n"
-    "Introdução à Programação em Python - P1"
-)
+borda = "=" * 40
 
-border =  "=" * 40
+print(borda)
+print("Boas vindas ao PyQuiz CC!\nIntrodução à Programação em Python - P1")
+print(borda)
 
-print(f"{border}\n{intro_message}\n{border}")
+jogando = input("Gostaria de iniciar?(s/n) ").lower().strip()
 
-playing = input("Gostaria de iniciar?(s/n) ").lower().strip()
-valid_asnwers = ["sim", "s", "yes", "y", "true", "claro", "com certeza"]
-
-if playing not in valid_asnwers:
+if jogando != "s" and jogando != "sim":
     quit()
 
-answer_options = "Sua resposta(a/b/c/d): "
+opcoes_de_resposta = "Sua resposta(a/b/c/d): "
 
-question_01 = (
+# ==========
+# Questão 1    
+# ==========
+questao_01 = (
     "\n1 - O que é um algoritmo?\n"
 
     "a) É perceber semelhanças entre problemas ou situações.\n"
@@ -30,5 +29,8 @@ question_01 = (
 
     "d) É um tipo de operador lógico.\n"
 )
-answer_01 = "b"
-user_answer_01 = input(f"{question_01}\n{answer_options}").lower().strip()
+resposta_01 = "b"
+
+print(questao_01)
+
+user_answer_01 = input(opcoes_de_resposta).lower().strip()
