@@ -1,5 +1,8 @@
-intro_message = "Boas vindas ao PyQuiz CC!\n" \
-"Um quiz interativo sobre Introdução à Programação " \
-"em Python - P1"
+intro_message = (
+    "Boas vindas ao PyQuiz CC!\n"
+    "Introdução à Programação em Python - P1"
+)
 
-print(intro_message)
+border =  "=" * 64
+
+print(f"{border}\n{intro_message}\n{border}")
