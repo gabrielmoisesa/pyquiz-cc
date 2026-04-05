@@ -9,6 +9,7 @@ jogando = input("Gostaria de iniciar?(s/n) ").lower().strip()
 if jogando != "s" and jogando != "sim":
     quit()
 
+nota = 0
 opcoes_resposta = "Sua resposta(a/b/c/d): "
 
 # ==========
@@ -29,8 +30,13 @@ questao_01 = (
 
     "d) É um tipo de operador lógico.\n"
 )
-resposta_01 = "b"
+resposta_correta_01 = "b"
 
 print(questao_01)
 
 resposta_usuario_01 = input(opcoes_resposta).lower().strip()
+
+if resposta_usuario_01 == resposta_correta_01:
+    nota += 1
+
+print(nota)
