@@ -3,6 +3,6 @@ intro_message = (
     "Introdução à Programação em Python - P1"
 )
 
-border =  "=" * 64
+border =  "=" * 40
 
 print(f"{border}\n{intro_message}\n{border}")
