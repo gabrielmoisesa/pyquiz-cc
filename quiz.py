@@ -37,7 +37,10 @@ print(questao_01)
 resposta_usuario_01 = input(opcoes_resposta).lower().strip()
 
 if resposta_usuario_01 == resposta_correta_01:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 # ==========
 # Questão 2
@@ -68,7 +71,10 @@ resposta_usuario_02 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_02 == resposta_correta_02:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -100,7 +106,10 @@ resposta_usuario_03 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_03 == resposta_correta_03:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -136,7 +145,10 @@ resposta_usuario_04 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_04 == resposta_correta_04:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -159,7 +171,10 @@ resposta_usuario_05 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_05 == resposta_correta_05:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -191,7 +206,10 @@ resposta_usuario_06 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_06 == resposta_correta_06:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -222,7 +240,10 @@ resposta_usuario_07 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_07 == resposta_correta_07:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -245,7 +266,10 @@ resposta_usuario_08 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_08 == resposta_correta_08:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -268,7 +292,10 @@ resposta_usuario_09 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_09 == resposta_correta_09:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -300,7 +327,10 @@ resposta_usuario_10 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_10 == resposta_correta_10:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -331,7 +361,10 @@ resposta_usuario_11 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_11 == resposta_correta_11:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -363,7 +396,10 @@ resposta_usuario_12 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_12 == resposta_correta_12:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -395,7 +431,10 @@ resposta_usuario_13 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_13 == resposta_correta_13:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -426,7 +465,10 @@ resposta_usuario_14 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_14 == resposta_correta_14:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -449,7 +491,10 @@ resposta_usuario_15 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_15 == resposta_correta_15:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -482,7 +527,10 @@ resposta_usuario_16 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_16 == resposta_correta_16:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -516,7 +564,10 @@ resposta_usuario_17 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_17 == resposta_correta_17:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -557,7 +608,10 @@ resposta_usuario_18 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_18 == resposta_correta_18:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -589,7 +643,10 @@ resposta_usuario_19 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_19 == resposta_correta_19:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
 
 
 # ==========
@@ -627,4 +684,7 @@ resposta_usuario_20 = input(opcoes_resposta).lower().strip()
 
 
 if resposta_usuario_20 == resposta_correta_20:
+    print("Correto!")
     nota += 1
+else:
+    print("Incorreto!")
