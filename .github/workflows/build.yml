@@ -1,0 +1,41 @@
+name: Build Executables
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: windows-latest
+            output: quiz.exe
+            asset_name: pyquiz-cc-windows.exe
+          - os: ubuntu-latest
+            output: quiz
+            asset_name: pyquiz-cc-linux
+          - os: macos-latest
+            output: quiz
+            asset_name: pyquiz-cc-macos
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Instalar PyInstaller
+        run: pip install pyinstaller
+
+      - name: Gerar executável
+        run: pyinstaller --onefile quiz.py
+
+      - name: Upload do executável
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/${{ matrix.output }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
