@@ -1,7 +1,11 @@
 borda = "=" * 40
 
 print(borda)
-print("Boas vindas ao PyQuiz CC!\nIntrodução à Programação em Python - P1")
+print("Boas vindas ao PyQuiz CC!")
+print("Introdução à Programação em Python - P1")
+print("-" * 40)
+print("Feito por: Gabriel Moises Alves")
+print("Ciência da Computação - UNIESP")
 print(borda)
 
 jogando = input("Gostaria de iniciar?(s/n) ").lower().strip()
