@@ -100,6 +100,11 @@ a extensão da **Microsoft**.
 > 💡 Se estiver no VS Code, você também pode abrir o arquivo `quiz.py` e clicar no botão
 > **▶ Run Python File** no canto superior direito da tela.
 
+## Créditos
+
+- Inspirado no projeto [Quiz Game](https://github.com/techwithtim/5-Python-Projects-For-Beginners/blob/main/quiz_game.py)
+  de [Tim Ruscica (Tech With Tim)](https://github.com/techwithtim)
+
 ## Licença
 
 Distribuído sob a licença MIT. Veja [`LICENSE`](LICENSE) para mais informações.
