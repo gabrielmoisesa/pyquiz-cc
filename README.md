@@ -48,13 +48,33 @@ e conta com comentários didáticos ao longo do código para facilitar o entendi
 
 ### Pré-requisitos
 
-Ter o [Python 3](https://www.python.org/downloads/) instalado na máquina.
+**1. Python 3**
 
-Para verificar se já está instalado, execute no terminal:
+Você precisará ter o [Python 3](https://www.python.org/downloads/) instalado na máquina.
+Acesse o link, baixe o instalador para Windows e siga os passos.
+
+> ⚠️ Durante a instalação, marque a opção **"Add Python to PATH"** antes de clicar em Install.
+> Sem isso, o Python pode não ser reconhecido no terminal.
+
+Para verificar se a instalação foi concluída com sucesso, abra o terminal e execute:
 
 ```bash
 python --version
 ```
+
+Se aparecer algo como `Python 3.x.x`, está tudo certo! ✅
+
+---
+
+**2. VS Code (opcional, mas recomendado)**
+
+Se for rodar o projeto pelo [Visual Studio Code](https://code.visualstudio.com/), instale a extensão
+oficial do Python para ter suporte a syntax highlight, execução direta e detecção de erros:
+
+🔗 [Python — Extensão para VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+Ou pesquise por **"Python"** na aba de extensões do VS Code (`Ctrl + Shift + X`) e instale
+a extensão da **Microsoft**.
 
 ### Instalação e Execução
 
@@ -63,6 +83,8 @@ python --version
    ```bash
    git clone https://github.com/gabrielmoisesa/pyquiz-cc.git
    ```
+
+   Ou baixe o projeto como `.zip` clicando em **Code → Download ZIP** no GitHub e extraia a pasta.
 
 2. Navegue até a pasta do projeto:
 
@@ -74,6 +96,9 @@ python --version
    ```bash
    python quiz.py
    ```
+
+> 💡 Se estiver no VS Code, você também pode abrir o arquivo `quiz.py` e clicar no botão
+> **▶ Run Python File** no canto superior direito da tela.
 
 ## Licença
 
