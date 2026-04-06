@@ -4,6 +4,9 @@ on:
   release:
     types: [created]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
@@ -12,13 +15,13 @@ jobs:
         include:
           - os: windows-latest
             output: quiz.exe
-            asset_name: pyquiz-cc-windows.exe
+            asset_name: pyquiz-windows.exe
           - os: ubuntu-latest
             output: quiz
-            asset_name: pyquiz-cc-linux
+            asset_name: pyquiz-linux
           - os: macos-latest
             output: quiz
-            asset_name: pyquiz-cc-macos
+            asset_name: pyquiz-macos
 
     steps:
       - uses: actions/checkout@v4
@@ -33,9 +36,13 @@ jobs:
       - name: Gerar executável
         run: pyinstaller --onefile quiz.py
 
+      - name: Renomear executável
+        shell: bash
+        run: mv dist/${{ matrix.output }} dist/${{ matrix.asset_name }}
+
       - name: Upload do executável
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/${{ matrix.output }}
+          files: dist/${{ matrix.asset_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
