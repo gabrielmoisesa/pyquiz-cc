@@ -688,3 +688,15 @@ if resposta_usuario_20 == resposta_correta_20:
     nota += 1
 else:
     print("Incorreto!")
+
+# =================
+# Resultados finais
+# =================
+
+nota_porcentagem = round((nota / 20) * 100)
+
+print(borda)
+print("Resultado final:")
+print("Você acertou", nota, "de 20 questões!")
+print("Aproveitamento:", str(nota_porcentagem) + "%")
+print(borda)
