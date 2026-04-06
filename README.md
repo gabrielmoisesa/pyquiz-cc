@@ -15,7 +15,8 @@ Um quiz interativo de terminal sobre os conteúdos de Introdução à Programaç
 2. [Como Executar](#como-executar)
    - [Pré-requisitos](#pré-requisitos)
    - [Instalação e Execução](#instalação-e-execução)
-3. [Licença](#licença)
+3. [Créditos](#créditos)
+4. [Licença](#licença)
 
 </details>
 
