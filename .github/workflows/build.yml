@@ -1,28 +1,3 @@
-name: Build Executables
-
-on:
-  release:
-    types: [created]
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        include:
-          - os: windows-latest
-            output: quiz.exe
-            asset_name: pyquiz-windows.exe
-          - os: ubuntu-latest
-            output: quiz
-            asset_name: pyquiz-linux
-          - os: macos-latest
-            output: quiz
-            asset_name: pyquiz-macos
-
     steps:
       - uses: actions/checkout@v4
 
@@ -36,9 +11,20 @@ jobs:
       - name: Gerar executável
         run: pyinstaller --onefile quiz.py
 
-      - name: Renomear executável
-        shell: bash
-        run: mv dist/${{ matrix.output }} dist/${{ matrix.asset_name }}
+      - name: Renomear e fazer upload (Windows)
+        if: matrix.os == 'windows-latest'
+        run: |
+          mv dist/quiz.exe dist/pyquiz-windows.exe
+          
+      - name: Renomear e fazer upload (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          mv dist/quiz dist/pyquiz-linux
+
+      - name: Renomear e fazer upload (macOS)
+        if: matrix.os == 'macos-latest'
+        run: |
+          mv dist/quiz dist/pyquiz-macos
 
       - name: Upload do executável
         uses: softprops/action-gh-release@v2
