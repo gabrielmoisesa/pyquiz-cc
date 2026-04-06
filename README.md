@@ -22,6 +22,8 @@ Um quiz interativo de terminal sobre os conteúdos de Introdução à Programaç
 
 ## Sobre o Projeto
 
+![PyQuiz CC rodando no terminal](screenshot.png)
+
 PyQuiz CC é um quiz de terminal com 20 questões de múltipla escolha sobre os conteúdos iniciais
 de Introdução à Programação em Python, desenvolvido para a turma de Ciência da Computação da UNIESP.
 
